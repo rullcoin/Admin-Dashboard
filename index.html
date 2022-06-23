@@ -6,37 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container">
         <div class="side-bar">
-          <h1>Dashboard</h1>
+
+          <div class="logo">
+            <img src="img/dashboard.png">
+            <h1>
+              Dashboard</h1>
+          </div>
           
-          <ul>
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
-          </ul>
-          <ul>
-            <li>Settings</li>
-            <li>Support</li>
-            <li>Privacy</li>
-          </ul>
+          
+          <div class="main-links">
+            <ul>
+              <li>
+                <img src="img/home.png">
+                <p>Home</p></li>
+              <li>
+                <img src="img/profile.png">
+                <p>Profile</p></li>
+              <li>
+                <img src="img/message.png">
+                <p>Messages</p></li>
+              <li>
+                <img src="img/history.png" alt="History Icon">
+                <p>History</p></li>
+              <li>
+                <img src="img/task.png" alt="">
+                <p>Tasks</p></li>
+              <li>
+                <img src="img/communities.png" alt="">
+                <p>Communities</p></li>
+            </ul>
+          </div>
+
+
+          <div class="secondary-links">
+            <ul>
+              <li>
+                <img src="img/cog.png" alt="">
+                <p>Settings</p></li>
+              <li>
+                <img src="img/account-question.png" alt="">
+                <p>Support</p></li>
+              <li>
+                <img src="img/account-lock.png" alt="">
+                <p>Privacy</p></li>
+            </ul>
+          </div>
         </div>
         <div class="header">
           <div class="top-header">
-            <input class="search-bar" id="search-bar" type="text" />
-            <div class="top-name"><h2>Raul Orban</h2></div>
+            <div class="search-container">
+              <img src="img/magnify .png">
+              <input class="search-bar" id="search-bar" type="search" />
+            </div>
+            
+            <div class="top-name">
+              <img class="bell" src="img/bell-ring.png" alt="">
+              <img class="profile-image" src="img/Bitcoin.svg" alt="">
+              <h2>Raul Orban</h2>
+            </div>
 
           </div>
           <div class="bottom-header">
 
             <div class="header-name-container">
-              <p>Hi there,</p>
-              <h1>Raul Orban (@rullcoin)</h1>
+
+              <img src="img/Bitcoin.svg" alt="">
+
+              <div class="greeting">
+                <h3>Hi there,</h3>
+                <h1>Raul Orban (@rullcoin)</h1>
+              </div>
             </div>
 
             <div class="header-button-container">
@@ -139,7 +185,7 @@
                 <p>Life Changing App</p>
               </div>
               <div class="bot-cards">
-                <h4>alex</h4>
+                <h4>@alex</h4>
                 <p>No Traffic Maker</p>
               </div>
             </div>
