@@ -41,7 +41,7 @@ li {
     font-weight: bold;
 }
 
-li p {
+li p, li img {
     margin: 0;
     cursor: pointer;
 }
@@ -129,6 +129,7 @@ button:hover {
     grid-template-columns: 2fr 1fr;
     gap: 30px;
     padding-bottom: 5rem;
+    border-top: 3px rgb(209, 206, 206) solid;
 }
 
 .content-left-section {
@@ -142,38 +143,45 @@ button:hover {
 .content-right-section {
     display: grid;
     grid-template-rows: 3rem auto;
-    gap: 20px
+    gap: 20px;
+    justify-content: center;
 }
 
 .content-left-section h1, .content-right-section h1 {
     grid-column: 1 /-1;
     margin: 0;
-    align-self: end;
-}
-
-.right-top-section {
-    display: flex;
-    flex-direction: column;
-    
 }
 
 .right-top-section, .right-bot-section {
-    border: 1px black solid;
+    padding: 2rem 2rem;
+
 }
 
-.announcements {
-    display: grid;
+.card, .right-top-section, .right-bot-section {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px rgb(226, 222, 222);
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
 }
-
 
 .card {
-    background-color: rgb(255, 255, 255);
     padding: 2rem 1rem;
     border-left: 10px solid;
-    border-image: linear-gradient(rgb(248, 176, 21), #000) 0 100%; border-left: 2px linear chocolate;
-    box-shadow: 3px 3px rgb(226, 222, 222);
+    border-image: linear-gradient(rgb(248, 176, 21), rgb(8, 158, 196)) 0 100%; 
+    justify-content: space-between;
+}
+
+.action-block {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
 }
 
 .card:hover {
     background-color: beige;
+}
+
+.right-cards {
+    border-bottom: 1px solid rgb(175, 172, 172)
 }
