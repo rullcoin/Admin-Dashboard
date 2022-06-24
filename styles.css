@@ -1,3 +1,7 @@
+:root {
+    --side-background-color: #f97316;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -14,7 +18,7 @@ body {
 .side-bar {
     display: grid;
     grid-row: 1 / -1;
-    background-color:#f97316;
+    background-color: var(--side-background-color);
     justify-items: start;
     padding-left: 3rem;
     color: rgb(255, 255, 255);
@@ -47,19 +51,12 @@ li p, li img {
 }
 .header {
     display: grid;
-    grid-template-columns: minmax(200px, auto);
+    grid-template-columns: repeat(minmax(50px, auto));
     grid-template-rows: 1fr;
     background-color: rgb(255, 255, 255);
 }
 
-.top-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row: 1fr;
-    align-items: center;
-}
-
-.bottom-header {
+.top-header, .bottom-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -104,7 +101,7 @@ input[type="search"] {
 
 
 .header-button-container {
-    justify-self: center;
+    justify-self: start;
 }
 
 .header-button-container button {
@@ -120,7 +117,7 @@ input[type="search"] {
 }
 
 button:hover {
-    background-color: #cc6b1c;
+    background-color: var(--side-background-color);
 }
 
 .header-button-container, button {
@@ -140,28 +137,24 @@ button:hover {
     border-top: 3px rgb(209, 206, 206) solid;
 }
 
-.content-left-section {
+.content-left-section, .content-right-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: 3rem auto;
     gap: 20px;
-    
+}
+
+.content-left-section {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .content-right-section {
-    display: grid;
-    grid-template-rows: 3rem auto;
-    gap: 20px;
+    grid-template-columns: 0.6fr;
     justify-content: center;
 }
 
 .content-left-section h1, .content-right-section h1 {
     grid-column: 1 /-1;
     margin: 0;
-}
-
-.right-top-section, .right-bot-section {
-    padding: 2rem 2rem;
 }
 
 .card, .right-top-section, .right-bot-section {
@@ -172,10 +165,14 @@ button:hover {
     border-radius: 15px;
 }
 
+.right-top-section, .right-bot-section {
+    padding: 2rem;
+}
+
 .card {
     padding: 2rem 1rem;
     border-left: 10px solid;
-    border-image: linear-gradient(rgb(248, 176, 21), rgb(8, 158, 196)) 0 100%; 
+    border-image: linear-gradient(rgb(253, 206, 104), rgb(255, 115, 0)) 0 100%; 
     justify-content: space-between;
 }
 
@@ -190,7 +187,7 @@ button:hover {
 }
 
 .card:hover {
-    background-color: beige;
+    background-color: rgb(245, 235, 220);
 }
 
 .right-cards {
@@ -206,7 +203,7 @@ button:hover {
 
 .bot-card-logo img {
     height: 4rem;
-    width: 4rem;
+    width: 4.3rem;
 }
 
 .bot-card-content p, .bot-card-content h4 {
