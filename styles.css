@@ -14,10 +14,10 @@ body {
 .side-bar {
     display: grid;
     grid-row: 1 / -1;
-    background-color:rgb(8, 158, 196);
+    background-color:#f97316;
     justify-items: start;
     padding-left: 3rem;
-    color: rgb(236, 239, 241);
+    color: rgb(255, 255, 255);
 }
 
 .side-bar ul {
@@ -67,8 +67,12 @@ li p, li img {
 
 .header-name-container {
     display: flex;
-    gap: 10px;
+    gap: 25px;
     align-items: center;
+}
+
+.greeting h3, .greeting h1 {
+    margin: 0;
 }
 
 .search-container {
@@ -104,10 +108,10 @@ input[type="search"] {
 }
 
 .header-button-container button {
-    background-color: #008CBA;
-    padding: 15px 35px;
+    background-color: #fdba74;
+    padding: 1rem 2rem;
     border-radius: 25px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 1.3rem;
     font-weight: bold;
     box-shadow: none;
@@ -158,7 +162,6 @@ button:hover {
 
 .right-top-section, .right-bot-section {
     padding: 2rem 2rem;
-
 }
 
 .card, .right-top-section, .right-bot-section {
@@ -198,9 +201,14 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 2rem;
+    margin-bottom: 1rem;
 }
 
 .bot-card-logo img {
     height: 4rem;
     width: 4rem;
+}
+
+.bot-card-content p, .bot-card-content h4 {
+    margin: 0;
 }
